@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <h1 id="title">freeCodeCamp Survey Form</h1> 
+   <p id="descreption">Thank you for taking the time to help us improve the platform</p>
+   <form action="https://register-demo.freecodecamp.org" class="survey-form" method="post">
+    <fieldset>
+        <label for="name">Name<input type="text" id="name" name="name" required placeholder="Enter your name" /></label>
+        <label for="email">Email<input type="email" id="email" name="email" required placeholder="Enter your Email" /></label>
+        <label for="number">Age (optional)<input type="number" name="number" id="number" min="13" max="100" placeholder="Age" /></label>
+    </fieldset>
+   </form>
+</body>
+</html>
