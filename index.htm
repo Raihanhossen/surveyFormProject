@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>survey-form</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-   <h1 id="title">freeCodeCamp Survey Form</h1> 
-   <p id="descreption">Thank you for taking the time to help us improve the platform</p>
-   <form action="https://register-demo.freecodecamp.org" class="survey-form" method="post">
-    <fieldset>
-        <label for="name">Name<input type="text" id="name" name="name" required placeholder="Enter your name" /></label>
-        <label for="email">Email<input type="email" id="email" name="email" required placeholder="Enter your Email" /></label>
-        <label for="number">Age (optional)<input type="number" name="number" id="number" min="13" max="100" placeholder="Age" /></label>
-    </fieldset>
-   </form>
+    <div class="container">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form action="https://register-demo.freecodecamp.org" class="survey-form" id="survey-form" method="post">
+            <fieldset>
+                <label id="name-label" for="name">Name<input type="text" id="name"  class="form-control" name="name" required
+                        placeholder="Enter your name" /></label>
+            </fieldset>
+            <fieldset>
+                <label id="email-label" for="email">Email<input type="email" id="email" class="form-control" name="email" required
+                        placeholder="Enter your Email" /></label>
+            </fieldset>
+            <fieldset>
+                <label id="number-label" for="number">Age (optional)<input type="number" name="number" id="number"  class="form-control"
+                        min="13" max="100" placeholder="Age" /></label>
+            </fieldset>
+            <fieldset>
+                <p>Which option best describes your current role?</p>
+                <select name="referrer" id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label for=""><input name="user-recommended" type="radio" name="" id=""> Definitely</label>
+                <label for=""><input name="user-recommended" type="radio" name="" id=""> Maybe</label>
+                <label for=""><input name="user-recommended" type="radio" name="" id=""> Not Sure</label>
+                <label for=""><input name="user-recommended" type="radio" name="" id=""> Something else</label>
+            </fieldset>
+            <fieldset>
+                <p>What would you like to see improed?</p>
+                <label for=""><input type="checkbox" name="" id="" value=""> Front-end Projects</label>
+                <label for=""><input type="checkbox" name="" id="" value=""> Back-end Projects</label>
+                <label for=""><input type="checkbox" name="" id="" value=""> Data Visualization</label>
+                <label for=""><input type="checkbox" name="" id="" value=""> Challenges</label>
+                <label for=""><input type="checkbox" name="" id="" value=""> Open Source Community</label>
+                <label for=""><input type="checkbox" name="" id="" value=""> Gitter help rooms</label>
+                <label for=""><input type="checkbox" name="" id="" value=""> Videos</label>
+                <label for=""><input type="checkbox" name="" id="" value=""> Wiki</label>
+            </fieldset>
+            <fieldset>
+                <p>Any comments or suggestions?</p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+            </fieldset>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,72 @@
+body {
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(45deg, rgba(58, 58, 158, .8), rgba(136, 136, 206, .7), rgba(76, 76, 200, .6)), url(R.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+body {
+    color: #f8f8f8;
+}
+
+#title,
+#description {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    display: block;
+    background: rgba(22, 22, 78, 0.6);
+    width: 80vw;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+
+}
+
+fieldset{
+    display: block;
+    padding: 2rem auto;
+    font-size: 1.125rem;
+}
+
+label {
+    display: block;
+    align-items: center;
+    font-size: 1.125rem; 
+     margin-bottom:.5rem;
+     padding: 10px;
+     /* margin-left: -10px; */
+     margin-right: 1.28rem;
+     
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height:2.135rem;
+    margin-top: .5rem;
+    border-radius: 5px;
+    border: none;
+    padding: .375rem .75rem;
+   
+}
