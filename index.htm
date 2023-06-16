@@ -10,52 +10,86 @@
 
 <body>
     <div class="container">
-        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <h1 id="title">Car Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form action="https://register-demo.freecodecamp.org" class="survey-form" id="survey-form" method="post">
             <fieldset>
-                <label id="name-label" for="name">Name<input type="text" id="name"  class="form-control" name="name" required
-                        placeholder="Enter your name" /></label>
+                <label for="name-label" id="name-label" >Name</label><input type="text" id="name" class="form-control" name="name"
+                required placeholder="Enter your name" />
             </fieldset>
             <fieldset>
-                <label id="email-label" for="email">Email<input type="email" id="email" class="form-control" name="email" required
-                        placeholder="Enter your Email" /></label>
+                <label for="email-label" id="email-label" >Email</label><input type="email" id="email" class="form-control"
+                name="email" required placeholder="Enter your Email" />
             </fieldset>
             <fieldset>
-                <label id="number-label" for="number">Age (optional)<input type="number" name="number" id="number"  class="form-control"
-                        min="13" max="100" placeholder="Age" /></label>
+                <label for="number-label" id="number-label" >Age (optional)</label><input type="number" name="number" id="number"
+                class="form-control" min="13" max="100" placeholder="Age" />
             </fieldset>
             <fieldset>
-                <p>Which option best describes your current role?</p>
-                <select name="referrer" id="dropdown">
-                    <option value="">(select one)</option>
-                    <option value="1">freeCodeCamp News</option>
-                    <option value="2">freeCodeCamp YouTube Channel</option>
+                <p>Which type of car do you like most?</p>
+                <select name="referrer" id="dropdown" class="form-control">
+                    <option value="">select one</option>
+                    <option value="1">Sports Car</option>
+                    <option value="2">SUV</option>
+                    <option value="3">Classic Car</option>
+                    <option value="4">4X4 off-roader</option>
                 </select>
             </fieldset>
             <fieldset>
-                <p>Would you recommend freeCodeCamp to a friend?</p>
-                <label for=""><input name="user-recommended" type="radio" name="" id=""> Definitely</label>
-                <label for=""><input name="user-recommended" type="radio" name="" id=""> Maybe</label>
-                <label for=""><input name="user-recommended" type="radio" name="" id=""> Not Sure</label>
-                <label for=""><input name="user-recommended" type="radio" name="" id=""> Something else</label>
+                <p>Which country's car will you prefer for your friends ? </p>
+                <label for="japan"><input name="user-recommended" type="radio" name="japan" id="japan" class="input-radio"
+                        value="japan"> Japan</label>
+                <label for="usa"><input name="user-recommended" type="radio" name="usa" id="usa" class="input-radio"
+                        value="usa"> U.S.A</label>
+                <label for="germany"><input name="user-recommended" type="radio" name="germany" id="germany"
+                        class="input-radio" value="germany"> Germany</label>
+                <label for=""><input name="user-recommended" type="radio" name="italy" id="italy" class="input-radio"
+                        value="italy"> Italy</label>
+                <label for="franch"><input name="user-recommended" type="radio" name="franch" id="franch" class="input-radio"
+                        value="franch"> Franch</label>
+                <label for="uk"><input name="user-recommended" type="radio" name="uk" id="uk" class="input-radio"
+                        value="uk"> U.K</label>
+                <label for="korea"><input name="user-recommended" type="radio" name="korea" id="korea" class="input-radio"
+                        value="korea"> Korea</label>
+                <label for="india"><input name="user-recommended" type="radio" name="india" id="india" class="input-radio"
+                        value="india"> India</label>
             </fieldset>
             <fieldset>
-                <p>What would you like to see improed?</p>
-                <label for=""><input type="checkbox" name="" id="" value=""> Front-end Projects</label>
-                <label for=""><input type="checkbox" name="" id="" value=""> Back-end Projects</label>
-                <label for=""><input type="checkbox" name="" id="" value=""> Data Visualization</label>
-                <label for=""><input type="checkbox" name="" id="" value=""> Challenges</label>
-                <label for=""><input type="checkbox" name="" id="" value=""> Open Source Community</label>
-                <label for=""><input type="checkbox" name="" id="" value=""> Gitter help rooms</label>
-                <label for=""><input type="checkbox" name="" id="" value=""> Videos</label>
-                <label for=""><input type="checkbox" name="" id="" value=""> Wiki</label>
+                <p>Which colour do you like most ?</p>
+                <select name="referrer" id="dropdown" class="form-control">
+                    <option value="">select one</option>
+                    <option value="1">Red</option>
+                    <option value="2">Yellow</option>
+                    <option value="3">Black</option>
+                    <option value="4" selected>White</option>
+                    <option value="5">Silver</option>
+                    <option value="6">Something else</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <p>Which brands are providing value for money car according to you? </p>
+                <label for="toyota"><input type="checkbox" name="toyota" id="toyota"
+                        value="toyota"> Toyota</label>
+                <label for="suzuki"><input type="checkbox" name="suzuki" id="suzuki"
+                        value="suzuki"> Suzuki</label>
+                <label for="hynday"><input type="checkbox" name="hynday" id="hynday"
+                        value="hynday"> Hyndai</label>
+                <label for="volvo"><input type="checkbox" name="volvo" id="volvo" value="volvo">
+                    Volvo</label>
+                <label for="ford"><input type="checkbox" name="ford" id="ford" value="ford"> Open
+                    Ford</label>
+                <label for="mahindra"><input type="checkbox" name="mahindra" id="mahindra" value="mahindra"> Mahindra</label>
+                <label for="tata"><input type="checkbox" name="tata" id="tata" value="tata"> Tata</label>
+                <label for="bently"><input type="checkbox" name="bently" id="bently" value="bently"> Bently</label>
             </fieldset>
             <fieldset>
                 <p>Any comments or suggestions?</p>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10"
+                    placeholder="Enter your comment here"></textarea>
             </fieldset>
-            <button id="submit" type="submit">Submit</button>
+            <fieldset>
+                <button id="submit" type="submit">Submit</button>
+            </fieldset>
         </form>
     </div>
 </body>
